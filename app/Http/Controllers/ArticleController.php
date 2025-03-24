@@ -62,7 +62,7 @@ class ArticleController extends Controller
             return "Article non trouvé";
         }
 
-        return response()->json($article);
+        return new ArticleResource($article);
     }
 
     /**
