@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\User;
 use App\Models\Category;
 use App\Models\Article;
+use App\Models\Comment;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -17,11 +18,12 @@ class DatabaseSeeder extends Seeder
     {
         // Article::factory(50)->create();
         // User::factory(50)->create();
-        Category::factory(10)->create();
+        // Category::factory(10)->create();
+        Comment::factory(100)->create();
 
 
-        // $article = Article::find(1);
-        // $article->categories()->attach([2,3,7]);
+        // $article = Article::find(2);
+        // $article->categories()->attach([2,2,10]);
 
         // $article->categories()->attach([2,4]);
 

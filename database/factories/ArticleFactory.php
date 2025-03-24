@@ -22,7 +22,6 @@ class ArticleFactory extends Factory
             'photo' => fake()->imageUrl(),
             'auteur' => fake()->name(),
             'content' => fake()->paragraph(),
-            'user_id' => User::factory()
         ];
     }
 }
